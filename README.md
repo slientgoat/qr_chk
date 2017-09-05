@@ -27,3 +27,10 @@ config :qr_chk,
   phx_name: :im_webserver, #phoenix应用名称
   file_exp: 60 #二维码图片存在时长（s)
 ```
+
+XXX.Endpoint Config
+-------------
+```elixir
+  plug Plug.Static,    
+    only: ~w(... qrchk)
+```
